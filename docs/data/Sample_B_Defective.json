@@ -1,0 +1,229 @@
+{
+  "sample_id": "B",
+  "synthetic": true,
+  "label": "Defective plan (main demo document, planted defects)",
+  "demo_today": "2026-11-16",
+  "operator": "Sample Operator Ltd",
+  "filing": {
+    "nc_plan_submitted": "2025-02-03",
+    "rd_plan_filed": "2025-10-06",
+    "board_approved": "2025-11-03",
+    "plan_start": "2026-01-01",
+    "plan_end": "2027-12-31"
+  },
+  "schedule_I": {
+    "a": {
+      "present": true,
+      "text": "A two-year plan (1 January 2026 to 31 December 2027) for customer research at the Company's retail fuel stations."
+    },
+    "b": {
+      "present": true,
+      "text": "Purpose: to understand how customers see the Company's brand. Expected outcome: To improve brand image and general customer awareness."
+    },
+    "c": {
+      "present": true,
+      "text": "One initiative: surveys and focus groups on brand perception, loyalty programme preferences and purchase behaviour at retail stations. Objective: understand customer opinion."
+    },
+    "d": {
+      "present": true,
+      "text": "Research scope: basic. Customer surveys and focus groups."
+    },
+    "e": {
+      "present": true,
+      "text": "Planned expenditure over the plan period is ₦17.5 million, shown by year in the table below."
+    },
+    "f": {
+      "present": true,
+      "text": "Customer surveys and focus groups run by a marketing agency, analysed in spreadsheet software, using standard marketing research methods."
+    },
+    "g": {
+      "present": true,
+      "text": "Retail stations in Lagos, Port Harcourt, Benin City and Warri."
+    },
+    "h": {
+      "present": true,
+      "text": "Estimated duration of the research: 24 months (1 January 2026 to 31 December 2027)."
+    },
+    "i": {
+      "present": true,
+      "text": "Sponsoring institution: Sample Brand Research Agency Ltd (fictional). Director: Mr. Kunle Ade-Sample. Officer in charge: Ms. Tola Bakare-Sample."
+    },
+    "j": {
+      "present": false,
+      "text": null
+    },
+    "k": {
+      "present": true,
+      "text": "The Company does not expect Board participation in the project."
+    },
+    "l": {
+      "present": true,
+      "text": "No public call is planned."
+    },
+    "m": {
+      "present": true,
+      "text": "The Retail Marketing Manager (Mr. Dele Ogunbanjo-Sample) oversees the study, supported by two retail officers."
+    },
+    "n": {
+      "present": true,
+      "text": "Methodology and requirements: questionnaire design, field interviews, focus groups and reporting."
+    },
+    "o": {
+      "present": false,
+      "text": null
+    },
+    "p": {
+      "present": true,
+      "text": "Year 1 (2026): survey design and fieldwork. Year 2 (2027): analysis and reporting."
+    }
+  },
+  "expected_outcome_text": "To improve brand image and general customer awareness.",
+  "planned_expenditure": {
+    "rows": [
+      {
+        "year": 2026,
+        "i1": 9500000,
+        "i2": 0
+      },
+      {
+        "year": 2027,
+        "i1": 8000000,
+        "i2": 0
+      }
+    ],
+    "stated_total": 17500000
+  },
+  "updates": [
+    {
+      "n": 1,
+      "date": "2026-08-05"
+    }
+  ],
+  "quarterly_reports": [
+    {
+      "quarter_start": "2026-01-01",
+      "filed": "2026-01-02"
+    },
+    {
+      "quarter_start": "2026-04-01",
+      "filed": "2026-04-01"
+    },
+    {
+      "quarter_start": "2026-10-01",
+      "filed": "2026-10-02"
+    }
+  ],
+  "extension_requests": [
+    {
+      "applies_to": "Quarterly report due 1 July 2026",
+      "due_date": "2026-07-01",
+      "request_date": "2026-06-29",
+      "granted_until": null
+    }
+  ],
+  "board_notices": [
+    {
+      "type": "deviation",
+      "reg": "17",
+      "notice_date": "2026-11-09",
+      "rectified_date": null,
+      "logged_by": "Compliance Reviewer, Sample Operator Ltd",
+      "description": "Board notice that the field-survey phase has not started as scheduled."
+    }
+  ],
+  "prior_outstanding_obligations": false,
+  "project": {
+    "title": "A Comparative Study of Customer Brand Perception, Loyalty Programme Preferences and Purchase Behaviour at Retail Fuel Stations Operated by the Company across Southern Nigerian Urban Markets",
+    "focus_area": "Retail marketing and customer-brand studies",
+    "keywords": [
+      "brand perception",
+      "retail fuel",
+      "customer loyalty"
+    ],
+    "goals_and_objectives": "Survey customers at stations in four cities, run focus groups on loyalty programmes and compare results across cities. The study will help the Company understand its customers better.",
+    "start": "2026-01-01",
+    "end": "2027-12-31",
+    "principal_investigator": {
+      "name": "Mr. Dele Ogunbanjo-Sample",
+      "role": "Principal Investigator; retail marketing"
+    },
+    "team": [
+      {
+        "name": "Mr. Dele Ogunbanjo-Sample",
+        "role": "Principal Investigator; retail marketing"
+      },
+      {
+        "name": "Ms. Tola Bakare-Sample",
+        "role": "Field lead"
+      }
+    ],
+    "budget_items": [
+      {
+        "code": "a",
+        "label": "Literature review",
+        "amount": 500000
+      },
+      {
+        "code": "b",
+        "label": "Equipment and consumables",
+        "amount": 1000000
+      },
+      {
+        "code": "c",
+        "label": "Local and international travel",
+        "amount": 1500000
+      },
+      {
+        "code": "d",
+        "label": "Data collection and analysis",
+        "amount": 3000000
+      },
+      {
+        "code": "e",
+        "label": "Report writing and equipment",
+        "amount": 1000000
+      },
+      {
+        "code": "f",
+        "label": "Personnel cost and allowances",
+        "amount": 6000000
+      },
+      {
+        "code": "g",
+        "label": "Prototype development",
+        "amount": 1000000
+      },
+      {
+        "code": "h",
+        "label": "Field trials",
+        "amount": 2500000
+      }
+    ],
+    "budget_stated_total": 17500000,
+    "activities": [
+      "Survey design",
+      "Fieldwork",
+      "Reporting"
+    ],
+    "kpis": [
+      {
+        "activity": "Survey design",
+        "indicator": "Questionnaire approved by 31 March 2026"
+      },
+      {
+        "activity": "Fieldwork",
+        "indicator": "At least 1,200 completed questionnaires by 31 December 2026"
+      },
+      {
+        "activity": "Reporting",
+        "indicator": "Final report delivered by 31 December 2027"
+      }
+    ],
+    "steering_team": {
+      "ncdmb": false,
+      "company": true,
+      "research_center": true
+    },
+    "plagiarism_statement_signed": false
+  }
+}

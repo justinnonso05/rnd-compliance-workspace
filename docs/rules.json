@@ -1,0 +1,41 @@
+{
+  "demo_today": "2026-11-16",
+  "source_check": "Every provision below was read in the official gazette copy: Nigerian Oil and Gas Research and Development Regulations, 2021, S.I. No. 34 of 2021 (Official Gazette No. 52, Lagos, 30 March 2021, Vol. 108, pp. B2347-2357), and in the NCDMB R&D Plan Template (2019).",
+  "config": {
+    "reg13_areas": ["Engineering studies", "Geological and geophysical studies", "Safety and environmental studies", "Local materials substitution studies"],
+    "template_focus_areas": ["Engineering studies", "Geological and geophysical studies", "Safety and environmental studies", "Local materials substitution studies", "Technology development studies"],
+    "holidays_on_quarter_starts": ["2025-10-01", "2026-01-01", "2026-10-01"],
+    "holiday_note": "Only holidays that fall on quarter-start dates are listed. Confirm against the official calendar before adding others."
+  },
+  "operator_rules": [
+    {"id": "R1", "check": "All Schedule I particulars (a) to (p) are present", "type": "presence", "provision": "Reg 11; Schedule I"},
+    {"id": "R2", "check": "Plan is a revolving 3 to 5 year plan (36 to 60 months)", "type": "exact", "provision": "Schedule I(a)"},
+    {"id": "R3", "check": "R&D Plan filed within 6 months of the Nigerian Content Plan submission", "type": "date arithmetic", "provision": "Reg 10"},
+    {"id": "R4", "check": "Approved plan updated every 6 months from the approval date (due dates at approval +6, +12, ... months)", "type": "date arithmetic", "provision": "Reg 12"},
+    {"id": "R5", "check": "Research scope falls within the Reg 13 areas (advisory: Reg 13 says 'shall include', so an off-list area is a flag for review, not a breach)", "type": "list lookup", "provision": "Reg 13; Template 1.2"},
+    {"id": "R6", "check": "Written progress report filed on the first working day of each quarter", "type": "date arithmetic", "provision": "Reg 21"},
+    {"id": "R7", "check": "Extension requested at least 7 days before the due date, at most once a year", "type": "date arithmetic", "provision": "Reg 22(1), 22(4)"},
+    {"id": "R8", "check": "Disapproved plan: revised plan and outstanding obligations within 14 days of notification", "type": "timer", "provision": "Reg 16"},
+    {"id": "R9", "check": "Deviation not corrected within 14 days of notification can lead to suspension", "type": "timer", "provision": "Reg 17"},
+    {"id": "R10", "check": "Expected outcome is measurable (heuristic stand-in for AI reading: a number or target must appear). Label it as a heuristic on screen.", "type": "keyword rule", "provision": "Schedule I(b); Template 5.1"},
+    {"id": "BUD", "check": "Budget lines add up to the stated project total", "type": "arithmetic", "provision": "Schedule I(e); Template 4.1 (internal consistency)"},
+    {"id": "EXP", "check": "Yearly planned expenditure adds up to the stated plan total", "type": "arithmetic", "provision": "Schedule I(e) (internal consistency)"}
+  ],
+  "template_rules": [
+    {"id": "T1", "check": "Project title is 20 words or fewer", "provision": "Template 1.3"},
+    {"id": "T2", "check": "Goals and objectives are 800 words or fewer", "provision": "Template 1.4"},
+    {"id": "T3", "check": "5 to 8 keywords", "provision": "Template 1.5"},
+    {"id": "T4", "check": "Start and estimated completion dates stated", "provision": "Template 1.6"},
+    {"id": "T5", "check": "A principal investigator is named, with each member's role", "provision": "Template 3.1"},
+    {"id": "T6", "check": "Budget covers items a to h", "provision": "Template 4.1"},
+    {"id": "T7", "check": "Every major activity has an indicator", "provision": "Template 5.1"},
+    {"id": "T8", "check": "Steering team includes NCDMB, the Company and the research center", "provision": "Template 6.2"},
+    {"id": "T9", "check": "Plagiarism statement is signed", "provision": "Template 7.0"}
+  ],
+  "assumptions_to_confirm": [
+    "Quarterly reports (R6) are expected from the first quarter-start after the approval date.",
+    "R4 uses a fixed schedule from the approval date. Reg 12 could also be read as 'at least every six months'.",
+    "The Template's 14-day approval target is the Board's response time, not the operator's correction window. Keep them separate on screen.",
+    "Expatriate-quota and procurement rules are left out: their thresholds were not checked against the Act's text."
+  ]
+}

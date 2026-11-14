@@ -1,0 +1,151 @@
+{
+  "A": [],
+  "B": [
+    {
+      "id": "B-01",
+      "rule": "R1",
+      "provision": "Reg 11; Schedule I",
+      "severity": "defect",
+      "message": "Missing Schedule I particulars: (j), (o)",
+      "where": "Part A, missing headings",
+      "must_show": true
+    },
+    {
+      "id": "B-02",
+      "rule": "R2",
+      "provision": "Schedule I(a)",
+      "severity": "defect",
+      "message": "Plan covers 24 months; a revolving 3 to 5 year plan is required",
+      "where": "Filing particulars; Part A (a)",
+      "must_show": true
+    },
+    {
+      "id": "B-03",
+      "rule": "R3",
+      "provision": "Reg 10",
+      "severity": "defect",
+      "message": "Plan filed 2025-10-06; deadline was 2025-08-03",
+      "where": "Filing particulars; (see NC Plan and filing dates)",
+      "must_show": true
+    },
+    {
+      "id": "B-04",
+      "rule": "R4",
+      "provision": "Reg 12",
+      "severity": "defect",
+      "message": "Update 1 filed 2026-08-05; due 2026-05-03 (94 day(s) late)",
+      "where": "Filing particulars, six-monthly updates",
+      "must_show": true
+    },
+    {
+      "id": "B-05",
+      "rule": "R4",
+      "provision": "Reg 12",
+      "severity": "defect",
+      "message": "Update 2 not filed; was due 2026-11-03",
+      "where": "Filing particulars, six-monthly updates",
+      "must_show": true
+    },
+    {
+      "id": "B-06",
+      "rule": "R5",
+      "provision": "Reg 13; Template 1.2",
+      "severity": "advisory",
+      "message": "Focus area 'Retail marketing and customer-brand studies' is not in the Regulation 13 list",
+      "where": "Annex 1, section 1.2",
+      "must_show": false
+    },
+    {
+      "id": "B-07",
+      "rule": "R7",
+      "provision": "Reg 22(1)",
+      "severity": "defect",
+      "message": "Extension requested 2 day(s) before the due date; at least 7 days required",
+      "where": "Filing particulars, extension requests",
+      "must_show": true
+    },
+    {
+      "id": "B-08",
+      "rule": "R6",
+      "provision": "Reg 21",
+      "severity": "defect",
+      "message": "Progress report for the quarter starting 2026-07-01 not filed (due 2026-07-01)",
+      "where": "Filing particulars, quarterly reports",
+      "must_show": true
+    },
+    {
+      "id": "B-09",
+      "rule": "R9",
+      "provision": "Reg 17",
+      "severity": "timer",
+      "message": "Open; deadline 2026-11-23; 7 day(s) remaining",
+      "where": "Board notices",
+      "must_show": true
+    },
+    {
+      "id": "B-10",
+      "rule": "R10",
+      "provision": "Schedule I(b); Template 5.1",
+      "severity": "defect",
+      "message": "Expected outcome has no measurable target (heuristic: no number found)",
+      "where": "Part A (b)",
+      "must_show": false
+    },
+    {
+      "id": "B-11",
+      "rule": "BUD",
+      "provision": "Schedule I(e); Template 4.1",
+      "severity": "defect",
+      "message": "Budget lines sum to 16,500,000; stated total 17,500,000",
+      "where": "Annex 1, section 4.1",
+      "must_show": true
+    },
+    {
+      "id": "B-12",
+      "rule": "T1",
+      "provision": "Template 1.3",
+      "severity": "defect",
+      "message": "Title has 26 words; maximum 20",
+      "where": "Annex 1, section 1.3",
+      "must_show": false
+    },
+    {
+      "id": "B-13",
+      "rule": "T3",
+      "provision": "Template 1.5",
+      "severity": "defect",
+      "message": "3 keywords; 5 to 8 required",
+      "where": "Annex 1, section 1.5",
+      "must_show": false
+    },
+    {
+      "id": "B-14",
+      "rule": "T8",
+      "provision": "Template 6.2",
+      "severity": "defect",
+      "message": "Steering team must include NCDMB, the Company and the research centre",
+      "where": "Annex 1, section 6.2",
+      "must_show": false
+    },
+    {
+      "id": "B-15",
+      "rule": "T9",
+      "provision": "Template 7.0",
+      "severity": "defect",
+      "message": "Plagiarism statement not signed",
+      "where": "Annex 1, section 7.0",
+      "must_show": false
+    }
+  ],
+  "C": [
+    {
+      "id": "C-01",
+      "rule": "R4",
+      "provision": "Reg 12",
+      "severity": "defect",
+      "message": "Update 1 filed 2026-06-23; due 2026-06-22 (1 day(s) late)",
+      "where": "Filing particulars, six-monthly updates",
+      "must_show": false
+    }
+  ]
+}
