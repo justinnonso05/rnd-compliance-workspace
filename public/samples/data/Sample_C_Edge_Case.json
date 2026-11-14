@@ -1,0 +1,249 @@
+{
+  "sample_id": "C",
+  "synthetic": true,
+  "label": "Edge case (values on the limits; exactly one day-late defect)",
+  "demo_today": "2026-11-16",
+  "operator": "Sample Operator Ltd",
+  "filing": {
+    "nc_plan_submitted": "2025-06-02",
+    "rd_plan_filed": "2025-12-02",
+    "board_approved": "2025-12-22",
+    "plan_start": "2026-01-01",
+    "plan_end": "2028-12-31"
+  },
+  "schedule_I": {
+    "a": {
+      "present": true,
+      "text": "A revolving three-year plan (1 January 2026 to 31 December 2028) with one initiative: sensor-based corrosion-inhibitor dosing on ageing onshore flowlines."
+    },
+    "b": {
+      "present": true,
+      "text": "Purpose: reduce corrosion-related leaks and unplanned shutdowns on ageing flowlines. Expected outcome: Cut leak incidents on the three pilot flowlines by at least 25% and unplanned shutdown hours by at least 20% within 12 months of full dosing control, against the 2025 baseline."
+    },
+    "c": {
+      "present": true,
+      "text": "One initiative. Objectives: (1) install sensors on three flowlines; (2) build a dosing model from field data; (3) test automated dosing; (4) compare incident and shutdown records with the 2025 baseline."
+    },
+    "d": {
+      "present": true,
+      "text": "Research scope: advanced (applied). Field data modelling and controlled dosing trials."
+    },
+    "e": {
+      "present": true,
+      "text": "Planned expenditure over the plan period is ₦30.0 million, shown by year in the table below."
+    },
+    "f": {
+      "present": true,
+      "text": "Corrosion-rate monitoring to NACE/AMPP-aligned practice and laboratory inhibitor tests to ASTM G31 immersion-test procedure; dosing model validated on held-out field data. Equipment: corrosion probes, flow and pressure sensors, a dosing controller. The procedures align with internationally accepted standards."
+    },
+    "g": {
+      "present": true,
+      "text": "Three onshore flowlines at Sample Field-3, Bayelsa State; laboratory tests at the research centre, Port Harcourt."
+    },
+    "h": {
+      "present": true,
+      "text": "Estimated duration of the research: 36 months (1 January 2026 to 31 December 2028)."
+    },
+    "i": {
+      "present": true,
+      "text": "Sponsoring institution: Sample Institute of Materials and Corrosion Research, Port Harcourt (fictional). Director: Prof. Emeka Dike-Sample. Officer in charge: Dr. Halima Sani-Sample."
+    },
+    "j": {
+      "present": true,
+      "text": "Reduced leaks lower the risk of spills. Inhibitor use is dosed to need, and discharge is monitored under the Company's environmental management plan. Laboratory waste follows the institute's protocol."
+    },
+    "k": {
+      "present": true,
+      "text": "The Company proposes a Board representative on the steering team and invites the Board to attend the pilot review."
+    },
+    "l": {
+      "present": true,
+      "text": "The Company will call for research-partner proposals for scale-up to further flowlines after the pilot, in 2028."
+    },
+    "m": {
+      "present": true,
+      "text": "The Pipeline Integrity Manager (Engr. Femi Lawal-Sample) leads implementation, with the Corrosion Engineer and Local Content Officer as key officers."
+    },
+    "n": {
+      "present": true,
+      "text": "Methodology and requirements: sensor installation, data collection, model building, dosing trials and baseline comparison. Requirements: three flowlines, a dosing controller and a data analyst."
+    },
+    "o": {
+      "present": true,
+      "text": "Six Company technicians trained in sensor maintenance and dosing control; one MSc student attached; one industrial attachment each year."
+    },
+    "p": {
+      "present": true,
+      "text": "Phase 1 (2026): installation and baseline. Phase 2 (2027): model building and dosing trials. Phase 3 (2028): comparison and final report. Milestones are in Annex 1, section 6."
+    }
+  },
+  "expected_outcome_text": "Cut leak incidents on the three pilot flowlines by at least 25% and unplanned shutdown hours by at least 20% within 12 months of full dosing control, against the 2025 baseline.",
+  "planned_expenditure": {
+    "rows": [
+      {
+        "year": 2026,
+        "i1": 12000000,
+        "i2": 0
+      },
+      {
+        "year": 2027,
+        "i1": 11000000,
+        "i2": 0
+      },
+      {
+        "year": 2028,
+        "i1": 7000000,
+        "i2": 0
+      }
+    ],
+    "stated_total": 30000000
+  },
+  "updates": [
+    {
+      "n": 1,
+      "date": "2026-06-23"
+    }
+  ],
+  "quarterly_reports": [
+    {
+      "quarter_start": "2026-01-01",
+      "filed": "2026-01-02"
+    },
+    {
+      "quarter_start": "2026-04-01",
+      "filed": "2026-04-01"
+    },
+    {
+      "quarter_start": "2026-07-01",
+      "filed": "2026-07-08"
+    },
+    {
+      "quarter_start": "2026-10-01",
+      "filed": "2026-10-02"
+    }
+  ],
+  "extension_requests": [
+    {
+      "applies_to": "Quarterly report due 1 July 2026",
+      "due_date": "2026-07-01",
+      "request_date": "2026-06-24",
+      "granted_until": "2026-07-08"
+    }
+  ],
+  "board_notices": [
+    {
+      "type": "deviation",
+      "reg": "17",
+      "notice_date": "2026-11-02",
+      "rectified_date": "2026-11-16",
+      "logged_by": "Compliance Reviewer, Sample Operator Ltd",
+      "description": "Board notice of a deviation in the sensor-installation schedule; corrected schedule filed on the fourteenth day."
+    }
+  ],
+  "prior_outstanding_obligations": false,
+  "project": {
+    "title": "Optimising Corrosion-Inhibitor Dosing in Ageing Onshore Oil Flowlines Using Field Sensor Data to Reduce Leak Incidents and Unplanned Production Shutdowns",
+    "focus_area": "Engineering studies",
+    "keywords": [
+      "corrosion",
+      "flowlines",
+      "inhibitor dosing",
+      "sensor data",
+      "pipeline integrity"
+    ],
+    "goals_and_objectives": "Install sensors on three flowlines; build a dosing model from field data; test automated dosing; measure leak incidents and shutdown hours against the 2025 baseline. The project addresses avoidable leaks and lost production on ageing assets.",
+    "start": "2026-01-01",
+    "end": "2028-12-31",
+    "principal_investigator": {
+      "name": "Dr. Halima Sani-Sample",
+      "role": "Principal Investigator; corrosion science"
+    },
+    "team": [
+      {
+        "name": "Dr. Halima Sani-Sample",
+        "role": "Principal Investigator; corrosion science"
+      },
+      {
+        "name": "Engr. Femi Lawal-Sample",
+        "role": "Co-investigator; pipeline integrity"
+      },
+      {
+        "name": "Mr. Yusuf Danjuma-Sample",
+        "role": "Data scientist"
+      }
+    ],
+    "budget_items": [
+      {
+        "code": "a",
+        "label": "Literature review",
+        "amount": 800000
+      },
+      {
+        "code": "b",
+        "label": "Equipment and laboratory consumables",
+        "amount": 8200000
+      },
+      {
+        "code": "c",
+        "label": "Local and international travel",
+        "amount": 2000000
+      },
+      {
+        "code": "d",
+        "label": "Data collection and analysis",
+        "amount": 4000000
+      },
+      {
+        "code": "e",
+        "label": "Report writing and equipment",
+        "amount": 1000000
+      },
+      {
+        "code": "f",
+        "label": "Personnel cost and allowances",
+        "amount": 8000000
+      },
+      {
+        "code": "g",
+        "label": "Prototype development",
+        "amount": 3500000
+      },
+      {
+        "code": "h",
+        "label": "Field trials",
+        "amount": 2500000
+      }
+    ],
+    "budget_stated_total": 30000000,
+    "activities": [
+      "Sensor installation and baseline",
+      "Dosing model development",
+      "Automated dosing trials",
+      "Comparison and final report"
+    ],
+    "kpis": [
+      {
+        "activity": "Sensor installation and baseline",
+        "indicator": "Sensors on three flowlines by 30 June 2026"
+      },
+      {
+        "activity": "Dosing model development",
+        "indicator": "Model error within 10% on held-out data by 31 March 2027"
+      },
+      {
+        "activity": "Automated dosing trials",
+        "indicator": "Twelve months of trial data by 31 March 2028"
+      },
+      {
+        "activity": "Comparison and final report",
+        "indicator": "Leak incidents down at least 25%; report by 31 December 2028"
+      }
+    ],
+    "steering_team": {
+      "ncdmb": true,
+      "company": true,
+      "research_center": true
+    },
+    "plagiarism_statement_signed": true
+  }
+}

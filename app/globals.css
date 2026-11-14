@@ -1,26 +1,428 @@
 @import "tailwindcss";
+@import "@fontsource/ibm-plex-sans/400.css";
+@import "@fontsource/ibm-plex-sans/600.css";
+@import "@fontsource/ibm-plex-mono/400.css";
 
+/* ── Design tokens ─────────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Greens */
+  --green-950: #0A3A1E;
+  --green-900: #0F4A29;
+  --green-700: #14612F;
+  --green-600: #1A7F37;
+  --green-400: #4CC26B;
+  --green-100: #E9F4EC;
+  --green-200: #BFDDC8;
+
+  /* Neutrals */
+  --bg: #F6F7F6;
+  --surface: #FFFFFF;
+  --border: #DDE2DE;
+  --border-strong: #C3CBC5;
+  --text: #1C2420;
+  --text-muted: #5B665F;
+  --text-on-dark: #E7F0EA;
+
+  /* Status colours — always paired with a text label, never colour alone */
+  --defect:      #B42318; --defect-bg:   #FDECEA;
+  --advisory:    #8A5A00; --advisory-bg: #FFF3D6;
+  --timer:       #175CD3; --timer-bg:    #E8F0FE;
+  --pass:        #1A7F37; --pass-bg:     #E9F4EC;
+  --info:        #475467; --info-bg:     #EEF0F2;
+
+  /* Radius */
+  --radius: 4px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ── Base reset & typography ────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  min-height: 100vh;
 }
+
+/* ── Utility typography classes ────────────────────────────────── */
+.page-title      { font-size: 20px; font-weight: 600; line-height: 1.3; }
+.section-heading { font-size: 16px; font-weight: 600; line-height: 1.4; }
+.table-text      { font-size: 13px; }
+.mono            { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+
+/* ── Focus ring ────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--green-600);
+  outline-offset: 2px;
+}
+
+/* ── Prototype banner ──────────────────────────────────────────── */
+.prototype-banner {
+  background: var(--advisory-bg);
+  border-bottom: 1px solid var(--advisory);
+  color: var(--advisory);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 6px 24px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* ── App shell ─────────────────────────────────────────────────── */
+.shell {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 240px;
+  flex-shrink: 0;
+  background: var(--green-950);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 16px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.sidebar-logo {
+  width: 32px;
+  height: 32px;
+  background: var(--green-600);
+  border: 1px solid var(--green-400);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 0.03em;
+  flex-shrink: 0;
+}
+
+.sidebar-product-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-on-dark);
+  line-height: 1.3;
+}
+
+.sidebar-product-tag {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--green-400);
+  letter-spacing: 0.03em;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 8px 0;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 16px;
+  font-size: 13px;
+  color: rgba(231,240,234,0.75);
+  text-decoration: none;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  transition: background 100ms, color 100ms;
+}
+
+.nav-item:hover {
+  background: var(--green-900);
+  color: var(--text-on-dark);
+}
+
+.nav-item.active {
+  background: rgba(76,194,107,0.08);
+  border-left-color: var(--green-400);
+  color: var(--green-400);
+}
+
+/* ── Top bar ───────────────────────────────────────────────────── */
+.topbar {
+  height: 56px;
+  flex-shrink: 0;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  gap: 16px;
+}
+
+.topbar-breadcrumb {
+  flex: 1;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.topbar-breadcrumb strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.topbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ── Content area ──────────────────────────────────────────────── */
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.content-area {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.content-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── Panel / card ──────────────────────────────────────────────── */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+/* ── Buttons ───────────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 14px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+  white-space: nowrap;
+  transition: background 100ms, border-color 100ms, color 100ms;
+}
+
+.btn-primary {
+  background: var(--green-600);
+  color: #fff;
+  border-color: var(--green-600);
+}
+.btn-primary:hover { background: var(--green-700); border-color: var(--green-700); }
+
+.btn-secondary {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+.btn-secondary:hover { background: var(--bg); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border-color: transparent;
+}
+.btn-ghost:hover { color: var(--text); background: var(--bg); }
+
+.btn-danger {
+  background: transparent;
+  color: var(--defect);
+  border-color: transparent;
+}
+.btn-danger:hover { background: var(--defect-bg); }
+
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-sm { height: 28px; padding: 0 10px; font-size: 12px; }
+
+/* ── Status badges ─────────────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 7px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: var(--radius);
+  white-space: nowrap;
+  line-height: 1.6;
+}
+.badge-defect   { background: var(--defect-bg);   color: var(--defect); }
+.badge-advisory { background: var(--advisory-bg); color: var(--advisory); }
+.badge-timer    { background: var(--timer-bg);    color: var(--timer); }
+.badge-pass     { background: var(--pass-bg);     color: var(--pass); }
+.badge-info     { background: var(--info-bg);     color: var(--info); }
+
+/* ── Dense table ───────────────────────────────────────────────── */
+.data-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.data-table th {
+  background: var(--green-100);
+  color: var(--text);
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.data-table td {
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+.data-table tr:last-child td { border-bottom: none; }
+.data-table tr:hover td { background: var(--bg); }
+
+/* ── Chips / tags ──────────────────────────────────────────────── */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  font-size: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text-muted);
+}
+
+/* ── Role selector ─────────────────────────────────────────────── */
+.role-select {
+  font-size: 12px;
+  font-family: inherit;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  padding: 4px 8px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* ── Demo date chip ────────────────────────────────────────────── */
+.demo-date-chip {
+  font-size: 11px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  background: var(--timer-bg);
+  color: var(--timer);
+  padding: 3px 8px;
+  border-radius: var(--radius);
+  border: 1px solid var(--timer);
+  opacity: 0.85;
+}
+
+/* ── Avatar initials ───────────────────────────────────────────── */
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius);
+  background: var(--green-600);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: 0.03em;
+}
+
+/* ── Stepper ───────────────────────────────────────────────────── */
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.step-num {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--border-strong);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700;
+  background: var(--surface);
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+.step.active .step-num  { border-color: var(--green-600); background: var(--green-600); color: #fff; }
+.step.done .step-num    { border-color: var(--pass); background: var(--pass); color: #fff; }
+.step.active            { color: var(--text); }
+.step-connector {
+  flex: 1; min-width: 24px; height: 1px;
+  background: var(--border);
+  margin: 0 4px;
+}
+
+/* ── Drawer ────────────────────────────────────────────────────── */
+.drawer-overlay {
+  position: fixed; inset: 0; z-index: 200;
+  pointer-events: none;
+}
+.drawer {
+  position: fixed; top: 0; right: 0; bottom: 0;
+  width: 480px; max-width: 100vw;
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  display: flex; flex-direction: column;
+  z-index: 201;
+  overflow: hidden;
+}
+.drawer-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.drawer-body {
+  flex: 1; overflow-y: auto; padding: 20px;
+}
+.drawer-footer {
+  padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  display: flex; gap: 8px; justify-content: flex-end;
+}
+
+/* ── Misc utilities ────────────────────────────────────────────── */
+.text-muted   { color: var(--text-muted); }
+.text-defect  { color: var(--defect); }
+.text-pass    { color: var(--pass); }
+.text-timer   { color: var(--timer); }
+.divider      { height: 1px; background: var(--border); margin: 16px 0; }
+.empty-state  { text-align: center; color: var(--text-muted); padding: 48px 24px; font-size: 13px; }

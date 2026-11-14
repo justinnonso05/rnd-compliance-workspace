@@ -1,0 +1,251 @@
+{
+  "sample_id": "A",
+  "synthetic": true,
+  "label": "Compliant plan (should pass every check)",
+  "demo_today": "2026-11-16",
+  "operator": "Sample Operator Ltd",
+  "filing": {
+    "nc_plan_submitted": "2025-03-03",
+    "rd_plan_filed": "2025-07-28",
+    "board_approved": "2025-09-10",
+    "plan_start": "2026-01-01",
+    "plan_end": "2029-12-31"
+  },
+  "schedule_I": {
+    "a": {
+      "present": true,
+      "text": "A revolving four-year plan (1 January 2026 to 31 December 2029) covering two initiatives: Initiative 1, local drilling-fluid additive substitution (2026 to 2028), and Initiative 2, a follow-on field pilot (2028 to 2029). The plan is reviewed and rolled forward at each six-monthly update."
+    },
+    "b": {
+      "present": true,
+      "text": "Purpose: reduce dependence on imported drilling-fluid additives and build Nigerian technical capacity in drilling-fluid formulation. Expected outcome: Qualify at least three locally sourced additive blends that meet API Spec 13A performance limits at no more than 70% of the imported-additive cost, and replace at least 30% of imported additive volume in the Company's onshore wells by 31 December 2028."
+    },
+    "c": {
+      "present": true,
+      "text": "Initiative 1 characterises, treats and blends Nigerian barite and bentonite and tests the blends in the laboratory and in two field trials. Initiative 2 (outline only) extends field use to six further wells. Objectives: (1) characterise six local deposits; (2) formulate and qualify blends; (3) validate them in the field; (4) train Nigerian personnel."
+    },
+    "d": {
+      "present": true,
+      "text": "Research scope: advanced (applied). Laboratory formulation and field validation, building on published characterisation work."
+    },
+    "e": {
+      "present": true,
+      "text": "Planned expenditure over the plan period is ₦64.0 million, shown by year in the table below."
+    },
+    "f": {
+      "present": true,
+      "text": "Standard laboratory fluid testing to API Spec 13A and API RP 13B-1 procedures (density, rheology, fluid loss), in the research centre's accredited laboratory. Equipment: rotational viscometer, HPHT filter press, mud balance. The procedures align with internationally accepted API standards."
+    },
+    "g": {
+      "present": true,
+      "text": "Material sampling at named deposits in Bayelsa and Rivers States; laboratory work at the research centre, Port Harcourt; field trials at two Company onshore wells (Sample Field-1 and Sample Field-2, Rivers State)."
+    },
+    "h": {
+      "present": true,
+      "text": "Initiative 1: 36 months (1 January 2026 to 31 December 2028). Initiative 2: 24 months (1 January 2028 to 31 December 2029)."
+    },
+    "i": {
+      "present": true,
+      "text": "Sponsoring institution: Niger Delta Institute of Applied Petroleum Research, Port Harcourt (fictional). Director: Prof. Chidi Eze-Sample. Officer in charge of the research: Dr. Ada Okeke-Sample."
+    },
+    "j": {
+      "present": true,
+      "text": "Laboratory waste is handled under the institute's waste protocol and field trials follow the Company's approved mud-management plan. Each blend is tested for toxicity and biodegradability. Local sourcing is expected to cut the transport emissions of imported additives. Findings go to the steering team."
+    },
+    "k": {
+      "present": true,
+      "text": "The Company proposes that the Board nominate a representative to the steering team, receive quarterly progress reports, and attend each field trial and the final review."
+    },
+    "l": {
+      "present": true,
+      "text": "The Company will issue a public call for field-pilot partners for Initiative 2, open to Nigerian universities and research centres, in the first quarter of 2028."
+    },
+    "m": {
+      "present": true,
+      "text": "The Head of Technical Services (Dr. Bola Adeyemi-Sample) leads delivery. Key officers: the Drilling Fluids Engineer and the Local Content Officer. The research centre carries out the laboratory work under the Principal Investigator."
+    },
+    "n": {
+      "present": true,
+      "text": "Methodology and requirements: material sampling and characterisation, blend formulation, laboratory qualification, field validation and cost comparison. Requirements are access to the accredited laboratory, two trial wells and a dedicated data analyst."
+    },
+    "o": {
+      "present": true,
+      "text": "Eight Company engineers and six research-centre technicians trained in fluid formulation and testing; two MSc students attached to the project; one three-month industrial attachment each year."
+    },
+    "p": {
+      "present": true,
+      "text": "Phase 1 (2026): material characterisation and formulation. Phase 2 (2027): laboratory qualification. Phase 3 (2028): field trials and cost review. Phase 4 (2028 to 2029): Initiative 2 pilot. Milestones and indicators are in Annex 1, sections 5 and 6."
+    }
+  },
+  "expected_outcome_text": "Qualify at least three locally sourced additive blends that meet API Spec 13A performance limits at no more than 70% of the imported-additive cost, and replace at least 30% of imported additive volume in the Company's onshore wells by 31 December 2028.",
+  "planned_expenditure": {
+    "rows": [
+      {
+        "year": 2026,
+        "i1": 21000000,
+        "i2": 0
+      },
+      {
+        "year": 2027,
+        "i1": 19000000,
+        "i2": 0
+      },
+      {
+        "year": 2028,
+        "i1": 11000000,
+        "i2": 4000000
+      },
+      {
+        "year": 2029,
+        "i1": 0,
+        "i2": 9000000
+      }
+    ],
+    "stated_total": 64000000
+  },
+  "updates": [
+    {
+      "n": 1,
+      "date": "2026-03-04"
+    },
+    {
+      "n": 2,
+      "date": "2026-08-31"
+    }
+  ],
+  "quarterly_reports": [
+    {
+      "quarter_start": "2025-10-01",
+      "filed": "2025-10-02"
+    },
+    {
+      "quarter_start": "2026-01-01",
+      "filed": "2026-01-02"
+    },
+    {
+      "quarter_start": "2026-04-01",
+      "filed": "2026-04-01"
+    },
+    {
+      "quarter_start": "2026-07-01",
+      "filed": "2026-07-01"
+    },
+    {
+      "quarter_start": "2026-10-01",
+      "filed": "2026-10-02"
+    }
+  ],
+  "extension_requests": [],
+  "board_notices": [],
+  "prior_outstanding_obligations": false,
+  "project": {
+    "title": "Substitution of Imported Drilling-Fluid Additives with Locally Sourced Barite and Bentonite Blends for Niger Delta Wells",
+    "focus_area": "Local materials substitution studies",
+    "keywords": [
+      "drilling fluids",
+      "local content",
+      "barite",
+      "bentonite",
+      "materials substitution",
+      "Niger Delta"
+    ],
+    "goals_and_objectives": "Characterise six Nigerian barite and bentonite deposits; formulate and qualify at least three blends against API Spec 13A; validate the best blends in two onshore wells; compare cost against imported additives; train Nigerian engineers and technicians. The project addresses the cost and supply risk of imported additives and builds local formulation capacity.",
+    "start": "2026-01-01",
+    "end": "2028-12-31",
+    "principal_investigator": {
+      "name": "Dr. Ada Okeke-Sample",
+      "role": "Principal Investigator; drilling-fluids chemistry"
+    },
+    "team": [
+      {
+        "name": "Dr. Ada Okeke-Sample",
+        "role": "Principal Investigator; drilling-fluids chemistry"
+      },
+      {
+        "name": "Engr. Musa Bello-Sample",
+        "role": "Co-investigator; field trials"
+      },
+      {
+        "name": "Ms. Ifeoma Nwosu-Sample",
+        "role": "Research associate; laboratory work"
+      },
+      {
+        "name": "Mr. Segun Afolabi-Sample",
+        "role": "Data analyst"
+      }
+    ],
+    "budget_items": [
+      {
+        "code": "a",
+        "label": "Literature review",
+        "amount": 1200000
+      },
+      {
+        "code": "b",
+        "label": "Equipment and laboratory consumables",
+        "amount": 14800000
+      },
+      {
+        "code": "c",
+        "label": "Local and international travel",
+        "amount": 3500000
+      },
+      {
+        "code": "d",
+        "label": "Data collection and analysis",
+        "amount": 6000000
+      },
+      {
+        "code": "e",
+        "label": "Report writing and equipment",
+        "amount": 1500000
+      },
+      {
+        "code": "f",
+        "label": "Personnel cost and allowances",
+        "amount": 12000000
+      },
+      {
+        "code": "g",
+        "label": "Prototype development",
+        "amount": 7000000
+      },
+      {
+        "code": "h",
+        "label": "Field trials",
+        "amount": 5000000
+      }
+    ],
+    "budget_stated_total": 51000000,
+    "activities": [
+      "Material characterisation",
+      "Blend formulation and laboratory qualification",
+      "Field trials in two wells",
+      "Cost and capacity review"
+    ],
+    "kpis": [
+      {
+        "activity": "Material characterisation",
+        "indicator": "Six deposits characterised by 30 June 2026"
+      },
+      {
+        "activity": "Blend formulation and laboratory qualification",
+        "indicator": "At least three blends meet API Spec 13A limits by 30 June 2027"
+      },
+      {
+        "activity": "Field trials in two wells",
+        "indicator": "Two trials completed by 30 June 2028; fluid-loss and rheology within limits"
+      },
+      {
+        "activity": "Cost and capacity review",
+        "indicator": "Cost at or below 70% of imported additives; 14 personnel trained by 31 December 2028"
+      }
+    ],
+    "steering_team": {
+      "ncdmb": true,
+      "company": true,
+      "research_center": true
+    },
+    "plagiarism_statement_signed": true
+  }
+}
